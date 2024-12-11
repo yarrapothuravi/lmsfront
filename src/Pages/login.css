@@ -1,0 +1,76 @@
+/* General styling for the login page */
+.login-page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left side image container */
+.login-page__image {
+  width: 50%;
+  height: 100%;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales without distorting */
+}
+
+/* Right side form container */
+.login-page__form {
+  width: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Ensures the label stays above the input */
+  align-items: flex-start; /* Aligns the label and input to the left */
+  width: 100%; /* Full width for consistency */
+}
+.form-label {
+  display: block; /* Ensures the label appears on a new line above the input */
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333; /* Label text color */
+  font-weight: 600;
+}
+.form-container {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #060606;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-button:hover {
+  background-color: #444;
+}
